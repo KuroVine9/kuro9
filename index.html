@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <title>게시판</title>
+    <style>
+        html, body {margin:0;padding:0;height:100%;}
+        .header {width:100%;height:15%;background:yellow;}
+        .nav {width:15%;height:70%;float:left;background:orange;}
+        .section {width:70%;height:70%;float:left;background:olivedrab;}
+        .aside {width:15%;height:70%;float:left;background:orange;}
+        .footer {width:100%;height:15%;clear:both;background:plum;}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>자유게시판</h1>
+        <p>안녕하세요. 아무 이야기를 게시할 수 있는 자유게시판입니다.</p>
+        <form name="search" method="get">
+            <input type="text" size="15" value="검색어를 입력해 주세요.">
+            <input type="submit" value="확인">
+        </form>
+    </header>
+    <nav class="nav">nav</nav>
+    <section class="section">section</section>
+    <aside class="aside">
+        <article>
+            <h3>로그인</h3>
+            <form name="login" method="get">
+                <input type="text" size="15">
+                <input type="password" size="15">
+                <input type="submit" valve="로그인">
+            </form>
+        </article>
+
+        <article>
+            <header>
+                <h3><a href="localhost:5500/article/index.html">최근 기사</h3>
+            </header>
+            <section>
+                <ul>
+                    <li><a href="https://www.twitch.tv/yeokka">빞케이 캐릭터 메이킹 중...TRPG를 향한 포석</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.google.com">구글, 자사 검색사이트 서비스 시작...혁신인가 퇴화인가?</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.twitch.tv/naseongkim">김나성, 150시간째 수면중...생존여부 불명</a></li>
+                </ul>
+            </section>
+        </article>
+
+        <article>
+            <h3>설문조사</h3>
+            <h5>이 페이지는 어떻게 보이는가?</h5>
+            <form>
+                <input type="radio" name="sulmun" value="1"> 조졌다 <br>
+                <input type="radio" name="sulmun" value="2"> 그럭저럭 조졌다 <br>
+                <input type="radio" name="sulmun" value="3"> 그럭저럭 <br>
+                <input type="submit" name="sulmun" value="전송">
+            </form>
+        </article>
+    </aside>
+    <footer class="footer">footer</footer>
+</body>
+</html>
