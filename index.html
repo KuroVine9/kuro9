@@ -4,28 +4,112 @@
     <title>게시판</title>
     <style>
         html, body {margin:0;padding:0;height:100%;}
-        .header {width:100%;height:15%;background:yellow;}
+        .header {width:100%;height:20%;background:yellow;}
         .nav {width:15%;height:70%;float:left;background:orange;}
         .section {width:70%;height:70%;float:left;}
         .aside {width:15%;height:70%;float:left;background:orange;}
-        .footer {width:100%;height:15%;clear:both;background:plum;}
+        .footer {width:100%;height:10%;clear:both;background:plum;}
+        nav.tap {background-color: orange;padding: 1px 0px; border-color: yellow;}
+        nav.tap li {margin:0;clear:both;width:6%;height:0%;
+                    display: inline-block;list-style-type: none;background-color: orange;
+                    padding: 10px 15px;text-align: center;}
+        nav.tap a{color: white; text-decoration: none;}
+        nav.tap a:hover {color: red;}
+        nav.tap li:hover {background-color:#ffbb00;}
+
+        div.article-list {margin: 40px; padding:5px;}
+        div.article-list div.chuchen,div.titlename,div.nickname {display:inline-block;}
+        div.article-list div.chuchen {width:5%;margin:5px;text-align: center;border-right-style:dotted; border-right-width:2px; border-right-color:gray;}
+        div.article-list div.titlename {width:80%;margin:5px;}
+        div.article-list div.nickname {width:90px;margin:5px;text-align: right; border-left-style:dotted; border-left-width:2px; border-left-color:gray;}
+        
+        div.article {background-color: lightblue; margin:5px;}
+
     </style>
 </head>
 <body>
+    
     <header class="header">
+    <nav class="tap">
+    <ul >
+        <li><a href="index.html">홈</a></li>
+        <li><a href="#">공지</a></li>
+        <li><a href="#">잡담</a></li>
+        <li><a href="#">창작물</a></li>
+        <li><a href="#">건의 및 질문</a></li>
+        <li><a href="#">게임정보</a></li>
+        <li><a href="#">굿즈 공모전</a></li>
+        <li><a href="#">클립</a></li>
+        <li><a href="#">폰마갤</a></li>
+        <li><a href="#">건마갤</a></li>
+        <li><a href="#">씹딱글</a></li>
+    </ul>
+    </nav>
         <h1>자유게시판</h1>
         <p>안녕하세요. 아무 이야기를 게시할 수 있는 자유게시판입니다.</p>
-        <form name="search" method="get">
+        <!-- <form name="search" method="get">
             <input type="search" size="45" placeholder="여기에 검색어 입력">
             <input type="submit" value="확인">
-        </form>
+        </form> -->
     </header>
     <nav class="nav">nav</nav>
     <section class="section">
-        <h3>배경색 선택기</h3><hr>
+        <!-- <h3>배경색 선택기</h3><hr>
         <form>
             색 선택<input type="color" value="#FFFFFF" onchange="document.body.style.backgroundColor=this.value">
-        </form>
+        </form> -->
+        <div class="article-list">
+            <div class="article" id="001">
+                <div class="chuchen">312</div>
+                <div class="titlename">김나성은 밥을 호호 불어 먹는다</div>
+                <div class="nickname">ㅇㅇ</div>
+            </div>
+            <div class="article" id="002">
+                <div class="chuchen">412</div>
+                <div class="titlename">2021년 일정</div>
+                <div class="nickname">김나성</div>
+            </div>
+            <div class="article" id="003">
+                <div class="chuchen">435</div>
+                <div class="titlename">[미완성]김나성식 투컴 세팅 설명서</div>
+                <div class="nickname">김나성</div>
+            </div>
+            <div class="article" id="004">
+                <div class="chuchen">52</div>
+                <div class="titlename">카오리와 지혜의 고리 manhwa</div>
+                <div class="nickname">하얀인형</div>
+            </div>
+            <div class="article" id="005">
+                <div class="chuchen">59</div>
+                <div class="titlename">김전일에서 피해자가 죽은 이유</div>
+                <div class="nickname">하얀인형</div>
+            </div>
+            <div class="article" id="006">
+                <div class="chuchen">38</div>
+                <div class="titlename">김나성 유튜브 채널에서 찾았다!</div>
+                <div class="nickname">대홍단고..</div>
+            </div>
+            <div class="article" id="007">
+                <div class="chuchen">20</div>
+                <div class="titlename">명방&#41;여러분 버그가 또 나왔습니다</div>
+                <div class="nickname">폭풍을부..</div>
+            </div>
+            <div class="article" id="008">
+                <div class="chuchen">35</div>
+                <div class="titlename">역시 전파곡도 불러본사람이 잘부른다고</div>
+                <div class="nickname">겟라임</div>
+            </div>
+            <div class="article" id="009">
+                <div class="chuchen">68</div>
+                <div class="titlename">뭐야 중상 어딨어요</div>
+                <div class="nickname">엑라당</div>
+            </div>
+            <div class="article" id="010">
+                <div class="chuchen">107</div>
+                <div class="titlename">진격거 엔딩이 잘 났다고 생각하는 이유</div>
+                <div class="nickname">발리라</div>
+            </div>
+        </div>
     </section>
     <aside class="aside">
         <article>
